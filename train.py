@@ -5,11 +5,18 @@ from sklearn.neural_network import MLPRegressor
 from sklearn.metrics import mean_squared_error
 import pandas as pd
 import joblib
+import os
 
-boston = load_boston()
-data = pd.DataFrame(boston.data, columns=boston.feature_names)
-data['TARGET'] = boston.target
+def save_dataset():
+    boston = load_boston()
+    data = pd.DataFrame(boston.data, columns=boston.feature_names)
+    data['TARGET'] = boston.target
+    data.to_csv('boston_housing.csv', index=False)
 
+if not os.path.exists('boston_housing.csv'):
+    save_dataset()
+
+data = pd.read_csv('boston_housing.csv')
 X = data.drop('TARGET', axis=1)
 y = data['TARGET']
 
