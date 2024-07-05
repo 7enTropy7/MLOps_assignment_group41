@@ -1,4 +1,4 @@
-name: Deployment
+name: Deploy
 
 on:
   push:
@@ -7,10 +7,10 @@ on:
 
 jobs:
   development:
-    name: Test and lint
+    name: Test and Lint
     uses: 7enTropy7/MLOps_assignment_group41/.github/workflows/development.yml@main
 
-  deploy:
+  deployment:
     name: Deployment
     needs:
       - development
