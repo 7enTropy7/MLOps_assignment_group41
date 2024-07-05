@@ -1,6 +1,7 @@
 name: Development
 
-on: [push]
+on:
+  workflow_call: {}
 
 jobs:
   test:

@@ -4,13 +4,11 @@ on:
   push:
     branches:
       - main
-    tags:
-      - main
 
 jobs:
   development:
     name: Test and Lint
-    uses: 7enTropy7/MLOps_assignment_group41/.github/workflows/development.yml@main
+    uses: ./.github/workflows/development.yml@main
 
   deployment:
     name: Deployment
