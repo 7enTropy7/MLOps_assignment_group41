@@ -8,7 +8,7 @@ on:
 jobs:
   development:
     name: Test and lint
-    uses: 7enTropy7/MLOps_assignment_group41/blob/main/.github/workflows/development.yml@main
+    uses: 7enTropy7/MLOps_assignment_group41/.github/workflows/development.yml@main
 
   deploy:
     name: Deployment
