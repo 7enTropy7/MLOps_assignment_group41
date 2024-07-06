@@ -1,4 +1,6 @@
 Flask
+optuna
+optuna_dashboard
 joblib
 numpy
 pandas
