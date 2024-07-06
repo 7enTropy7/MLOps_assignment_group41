@@ -1,0 +1,4 @@
+[core]
+    remote = myremote
+['remote "myremote"']
+    url = /Users/entropy/Desktop/dvc-versioning/MLOps_assignment_group41/storage
