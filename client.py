@@ -12,7 +12,7 @@ data = {
     ]
 }
 
-URL = 'http://127.0.0.1:5000/predict'
+URL = 'http://127.0.0.1:8080/predict'
 response = requests.post(URL, json=data, timeout=1.5)
 
 print(response.json())
